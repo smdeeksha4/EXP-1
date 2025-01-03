@@ -1,11 +1,13 @@
 
 
-file = open("input_single.txt", "r")
-a, b, c, x = map(int, file.readline().split())
+file = open("input.txt", "r")
+
+
+for line in file:
+    a, b, c, x = map(int, line.split())
+    y = a * x * x + b * x + c
+    print("For x =", x, "the calculated weather parameter y =", y)
+
+
 file.close()
-
-
-y = a * x * x + b * x + c
-
-print("For x =", x, "the calculated weather parameter y =", y)
 
