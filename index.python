@@ -1,6 +1,10 @@
-a = 1
-b = 3
-c = 2
 
-x = 2
+
+a = int(input("Enter the value of a: "))
+b = int(input("Enter the value of b: "))
+c = int(input("Enter the value of c: "))
+x = int(input("Enter the value of x: "))
+
 y = a * x * x + b * x + c
+
+print(f"For x = {x}, the calculated weather parameter y = {y}")
