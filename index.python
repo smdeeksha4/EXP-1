@@ -1,10 +1,11 @@
 
 
-a = int(input("Enter the value of a: "))
-b = int(input("Enter the value of b: "))
-c = int(input("Enter the value of c: "))
-x = int(input("Enter the value of x: "))
+file = open("input_single.txt", "r")
+a, b, c, x = map(int, file.readline().split())
+file.close()
+
 
 y = a * x * x + b * x + c
 
-print(f"For x = {x}, the calculated weather parameter y = {y}")
+print("For x =", x, "the calculated weather parameter y =", y)
+
